@@ -1,3 +1,5 @@
+import dev.panuszewski.gradle.pluginMarker
+
 plugins {
     `kotlin-dsl`
 }
@@ -8,6 +10,6 @@ repositories {
 }
 
 dependencies {
-    // precompile plugins
-    implementation(libs.lombok.plugin)
+    implementation(pluginMarker(libs.plugins.lombok))
+    implementation(pluginMarker(libs.plugins.spring.boot))
 }
