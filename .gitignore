@@ -1,5 +1,10 @@
-### Настройка glm
-.claude
+### Gradle
+backend/.gradle
+backend/gradle/wrapper/gradle-wrapper.jar
+backend/build-logic/.gradle
+backend/build-logic/build
+backend/build
 
 ### Среда разработки
 .idea
+*.iml

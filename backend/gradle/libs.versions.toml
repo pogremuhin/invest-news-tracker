@@ -1,0 +1,26 @@
+[versions]
+java-version = "25"
+spring-boot-version = "4.0.9"
+junit-version = "5.12.2"
+lombok-version = "9.1.0"
+
+[libraries]
+### spring
+spring-boot-bom = { module = "org.springframework.boot:spring-boot-dependencies", version.ref = "spring-boot-version" }
+spring-boot-starter = { module = "org.springframework.boot:spring-boot-starter" }
+
+spring-boot-starter-kafka = { module = "org.springframework.boot:spring-boot-starter-kafka" }
+
+spring-boot-starter-actuator = { module = "org.springframework.boot:spring-boot-starter-actuator" }
+spring-boot-starter-micrometer-metrics = { module = "org.springframework.boot:spring-boot-starter-micrometer-metrics" }
+spring-boot-starter-logging = { module = "org.springframework.boot:spring-boot-starter-logging" }
+
+### testing
+junit-bom = { module = "org.junit:junit-bom", version.ref = "junit-version" }
+junit-jupiter-api = { module = "org.junit.jupiter:junit-jupiter-api" }
+junit-jupiter-engine = { module = "org.junit.jupiter:junit-jupiter-engine" }
+junit-platform-launcher = { module = "org.junit.platform:junit-platform-launcher" }
+
+[plugins]
+spring-boot = { id = "org.springframework.boot", version.ref = "spring-boot-version" }
+lombok = { id = "io.freefair.lombok", version.ref = "lombok-version" }
